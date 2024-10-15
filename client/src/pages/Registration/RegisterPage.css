@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "CalSans-SemiBold";
+  src: url("./fonts/CalSans-SemiBold.woff") format("woff"), url("./fonts/CalSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Regular */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Italic */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+/* DM Sans Medium */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Bold */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Bold Italic */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(252, 41, 41);
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.spinner__text {
+  color: rgb(252, 49, 49);
+  padding-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spinner-border {
+  margin-left: 20px;
+}
+
+.reg_container {
+  min-height: 600px;
+  font-family: "Montserrat", sans-serif;
+}
+.reg_container .reg_card {
+  padding: 0 !important;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 80px 0px;
+}
+.reg_container .title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.reg_container .title .name_shop {
+  font-size: 25px;
+  font-weight: 900;
+}
+.reg_container .sub_text {
+  font-size: 14px;
+  color: #8d99ae;
+  text-align: center;
+}
+.reg_container .title_form {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.reg_container .form-floating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+.reg_container .reg_card_input {
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+.reg_container .register_btn {
+  border-radius: 20px;
+  background: none;
+  color: white;
+  border: 1px solid #d90429;
+  padding: 5px 30px;
+  width: 80%;
+  background-color: #d90429;
+}
+.reg_container .register_btn:hover {
+  color: #d90429;
+  background-color: white;
+}
+.reg_container .reg_card_right {
+  margin: 50px 0px;
+}
+.reg_container .auth_google_btn {
+  background: none;
+  border-radius: 20px;
+  color: #d90429;
+  border: 1px solid #d90429;
+  width: 100%;
+  margin-top: 5px;
+}
+.reg_container .auth_google_btn:hover {
+  color: white;
+  background-color: #d90429;
+}
+.reg_container .auth_vk_btn {
+  background: none;
+  border-radius: 20px;
+  color: blue;
+  border: 1px solid blue;
+  width: 100%;
+  margin-top: 5px;
+}
+.reg_container .auth_vk_btn:hover {
+  color: white;
+  background-color: blue;
+}
+.reg_container .remove_login {
+  text-decoration: none;
+  color: #8d99ae;
+  text-align: center;
+}
+.reg_container .remove_login:hover {
+  color: black;
+}
+.reg_container .reg_card_left {
+  padding: 0;
+  margin: 0;
+  background-image: url("https://www.artisans-gourmands.fr/wp-content/uploads/2019/06/bio_herbe_800.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.reg_container .reg_card_left .img_row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.reg_container .reg_card_left .img_col {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.reg_container .reg_card_left .img_col .register_text {
+  text-align: end;
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%;
+  line-height: 30px;
+}
+
+.invalid-tooltip {
+  right: 0;
+}/*# sourceMappingURL=RegisterPage.css.map */

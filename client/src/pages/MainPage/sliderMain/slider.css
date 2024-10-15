@@ -1,0 +1,98 @@
+.slider_container {
+  padding: 40px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.slider_container .swiper {
+  width: 100%;
+  height: 720px;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 129px 0px;
+}
+@media screen and (max-width: 1000px) {
+  .slider_container .swiper {
+    height: 540px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .slider_container .swiper {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .slider_container .swiper {
+    height: 210px;
+  }
+}
+.slider_container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_container .content_slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 30px;
+}
+.slider_container .content_slider .black_mask {
+  background-color: rgba(0, 0, 0, 0.219);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  border-radius: 30px;
+}
+.slider_container .content_slider h1,
+.slider_container .content_slider h4 {
+  width: 60%;
+  position: relative;
+  z-index: 99;
+}
+@media screen and (max-width: 1000px) {
+  .slider_container .content_slider h1,
+  .slider_container .content_slider h4 {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .slider_container .content_slider h1,
+  .slider_container .content_slider h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 435px) {
+  .slider_container .content_slider h1,
+  .slider_container .content_slider h4 {
+    font-size: 12px;
+    width: 100%;
+    display: none;
+  }
+}
+.slider_container .content_slider h4 {
+  padding-bottom: 40px;
+}
+.slider_container .swiper-button-next,
+.slider_container .swiper-button-prev {
+  color: red;
+}
+@media screen and (max-width: 610px) {
+  .slider_container .swiper-button-next,
+  .slider_container .swiper-button-prev {
+    display: none;
+  }
+}
+.slider_container .swiper-pagination-bullet-active {
+  background-color: red;
+}/*# sourceMappingURL=slider.css.map */

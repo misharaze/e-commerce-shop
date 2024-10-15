@@ -1,0 +1,222 @@
+@import "../../index.scss";
+
+.col-md-* {
+  display: flex;
+}
+
+.offcanvas {
+  background-image: url(../../../public/img/index/menu-bg.jpg);
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  .header_container {
+    background-color:rgb(85,107,47);
+    .header_top {
+      padding: 5px 0px;
+      background-color:#90EE90;
+
+      .header_top_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media screen and (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+
+      .header_top_center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .top_text {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          color: $grey;
+        }
+      }
+
+      .header_top_right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        .right_text {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          color: $grey;
+          margin-left: 10px;
+          transition: 0.5 ease all;
+          text-decoration: none;
+
+          &:hover {
+            transition: 0.5 ease all;
+            color: $red;
+          }
+        }
+      }
+    }
+
+    .header_main {
+      padding: 20px 0px;
+
+      .header_logo {
+        a {
+          text-decoration: none;
+          display: block;
+          width: fit-content;
+        }
+        .text_logo {
+          margin: 0;
+          padding: 0;
+          font-size: 30px;
+          font-weight: 900;
+          color: $black;
+          display: block;
+          width: fit-content;
+
+          .logo_dot {
+            color: $red;
+          }
+        }
+      }
+
+      .header_search {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        .input-group {
+          width: 100%;
+          .search_text {
+            background: none;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            z-index: 1000;
+            background-color: white;
+          }
+
+          .search_input {
+            width: max-content;
+            border-radius: 40px;
+            z-index: 1000;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .header_user_navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        a {
+          transition: 0.5 ease all;
+          padding: 0 10px;
+          display: block;
+          position: relative;
+          @media screen and (max-width: 599px) {
+            display: none;
+          }
+
+          span {
+            position: absolute;
+            top: -12px;
+            width: fit-content;
+            left: -5px;
+          }
+
+          .user_icon {
+            fill: $black !important;
+            transition: 0.5 ease all;
+          }
+
+          &:hover {
+            color: $red;
+            transition: 0.5 ease all;
+
+            .user_icon {
+              fill: $red !important;
+              transition: 0.5 ease all;
+            }
+          }
+        }
+
+        .off_btn {
+          border: 1px solid $red;
+          .off_icons {
+            fill: $red !important;
+          }
+
+          &:hover {
+            border: 1px solid black;
+            .off_icons {
+              fill: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .seach_item {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 30px;
+    padding: 0px 13px;
+
+    ul {
+      list-style: none;
+      padding: 0px 0px;
+      background-color: white;
+      padding-top: 20px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border: 1px solid #ced4da;
+
+      &:last-child{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-bottom: 15px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      li {
+        border-top: 1px solid #ced4da;
+        padding: 10px 10px;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        color: $red;
+
+        &:hover{
+          background-color: $red;
+          color: white;
+        }
+        
+      }
+
+      }
+      
+    }
+  }
+
+
+
+

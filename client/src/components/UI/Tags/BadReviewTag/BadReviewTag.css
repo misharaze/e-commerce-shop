@@ -1,0 +1,20 @@
+.tag {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  font-weight: 600;
+  margin: 0.25em 0.1em;
+}
+
+.tag-bad {
+  background: rgb(187, 7, 7);
+  color: #fff;
+}
+
+.tag-lg {
+  font-size: 12px;
+  border-radius: 10px;
+}/*# sourceMappingURL=BadReviewTag.css.map */

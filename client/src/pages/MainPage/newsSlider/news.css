@@ -1,0 +1,11 @@
+.news {
+  height: 450px;
+  background-image: url(../../../../public/img/header/bg_header.png);
+  font-family: "Montserrat", sans-serif;
+}
+.news .title {
+  padding-top: 30px;
+}
+.news h3 {
+  color: white;
+}/*# sourceMappingURL=news.css.map */

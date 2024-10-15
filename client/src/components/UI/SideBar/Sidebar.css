@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "CalSans-SemiBold";
+  src: url("./fonts/CalSans-SemiBold.woff") format("woff"), url("./fonts/CalSans-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Regular */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Italic */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+/* DM Sans Medium */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Bold */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/* DM Sans Bold Italic */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DM_Sans/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(252, 41, 41);
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.spinner__text {
+  color: rgb(252, 49, 49);
+  padding-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spinner-border {
+  margin-left: 20px;
+}
+
+.offcanvas {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.offcanvas .offcanvas_header .text_logo {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2b2d42;
+}
+.offcanvas .offcanvas_header .text_logo .logo_dot {
+  color: #d90429;
+}
+.offcanvas .offcanvas_body .off_navigation_btn {
+  border: 1px solid #ef233c;
+  color: #ef233c;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn:hover {
+  background-color: #ef233c;
+  color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_logout {
+  border: 1px solid #d90429;
+  color: #d90429;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_logout:hover {
+  background-color: #d90429;
+  color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_simple {
+  border: 1px solid rgb(39, 110, 39);
+  color: rgb(39, 110, 39);
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_simple:hover {
+  background-color: rgb(39, 110, 39);
+  color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_login {
+  border: 1px solid rgb(57, 151, 57);
+  color: rgb(57, 151, 57);
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_btn_login:hover {
+  background-color: rgb(57, 151, 57);
+  color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-toggle {
+  border: 1px solid #ef233c;
+  color: #ef233c;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-toggle:hover {
+  background-color: #ef233c;
+  color: white;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .basket_badge {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-menu {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ef233c;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-menu .off_navigation_dropdown-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ef233c;
+  padding: 5px 0px;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-menu .off_navigation_dropdown-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.offcanvas .offcanvas_body .off_navigation_dropdown .off_navigation_dropdown-menu .off_navigation_dropdown-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}/*# sourceMappingURL=Sidebar.css.map */

@@ -1,0 +1,255 @@
+@import "../../index.scss";
+
+.product_container {
+  width: auto;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+
+
+  .avatar_profile{
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  
+  .main_info_product {
+    .title_product {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    .product_code,
+    .size_guide {
+      font-size: 15px;
+      color: $grey;
+      padding: 0;
+      margin: 0;
+    }
+
+    .size_guide {
+      font-size: 15px;
+      color: $grey;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      margin-top: 10px;
+
+      &:hover{
+        color: $red;
+      }
+    }
+
+    .price_product {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 20px 0;
+      padding: 0;
+      color: $red;
+    }
+
+    .color_product,
+    .size_product {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 0px;
+
+      .color_product_p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .cart_btn {
+      border: none;
+      border-radius: 30px;
+      padding: 10px;
+      width: 100%;
+      background-color: $red;
+      color: white;
+
+      &:hover {
+        background-color: $white_red;
+      }
+
+      &:disabled{
+        background-color: rgb(226, 85, 85);
+      }
+    }
+
+    .cart_btn_success {
+      border: none;
+      border-radius: 30px;
+      padding: 10px;
+      width: 100%;
+      background-color: rgb(54, 148, 54);
+      color: white;
+
+      &:hover {
+        background-color: rgb(42, 110, 42);
+      }
+    }
+
+    .likes_btn {
+      border: none;
+      border-radius: 30px;
+      padding: 10px;
+      width: 100%;
+      background-color: rgb(102, 89, 224);
+      color: white;
+
+      &:hover {
+        background-color: rgb(86, 84, 204);
+      }
+
+      
+      &:disabled{
+        background-color: rgb(137, 135, 236);
+      }
+    }
+
+    .likes_btn_success {
+      border: none;
+      border-radius: 30px;
+      padding: 10px;
+      width: 100%;
+      background-color: rgb(119, 209, 250);
+      color: white;
+
+      &:hover {
+        background-color: rgb(118, 209, 202);
+      }
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card_qa {
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .card_question {
+    width: 70%;
+    float: left;
+    box-shadow: none;
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 2px !important;
+  }
+
+  .card_answer {
+    width: 70%;
+    float: right;
+    box-shadow: none;
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 2px !important;
+  }
+
+  .title_add {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+}
+.question_btn {
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: $red;
+  color: white;
+
+  &:hover {
+    background-color: $white_red;
+  }
+}
+
+.quest_about_text{
+  padding: 10px 0px;
+}
+
+.badge_span{
+  border-radius: 50%;
+  padding: 3px 8px;
+  background-color: $white_red;
+}

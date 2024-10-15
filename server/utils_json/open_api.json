@@ -1,0 +1,150 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "api.naturalia.fr",
+    "description": "api server naturalia",
+    "version": "v. 1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001",
+      "description": "serveur privés backend naturalia"
+    }
+  ],
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+
+  "paths": {
+    "/api/user/registration": {
+      "post": {
+        "summary": "retourne JWT token lorsque l'utilisateur est enregirstrer avec succés.",
+        "tags": ["User"],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "description": "adresse mail utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "example@example.com"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "required": true,
+            "description": "mot de passe utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "examplepassword12345"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "description": "prénom utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "jean"
+            }
+          },
+          {
+            "name": "family",
+            "in": "query",
+            "required": true,
+            "description": "nom de famille utilisateur ",
+            "schema": {
+              "type": "string",
+              "example": "gerard"
+            }
+          },
+          {
+            "name": "date_birthday",
+            "in": "query",
+            "required": true,
+            "description": "date de naissance utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "02.02.2000"
+            }
+          },
+          {
+            "name": "numberPhone",
+            "in": "query",
+            "required": true,
+            "description": "numero de telephone utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "0654378689"
+            }
+          },
+          {
+            "name": "gender",
+            "in": "query",
+            "required": true,
+            "description": "genre",
+            "schema": {
+              "type": "bool",
+              "example": true
+            }
+          },
+          {
+            "name": "allowSpam",
+            "in": "query",
+            "required": true,
+            "description": "accés aux lien",
+            "schema": {
+              "type": "bool",
+              "example": true
+            }
+          },
+          {
+            "name": "role",
+            "in": "query",
+            "required": true,
+            "description": "role utilisateur",
+            "schema": {
+              "type": "string",
+              "example": "USER"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "utilisateur est enregistrer sur le site ",
+            "schema": {
+              "type": "string",
+              "examples": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJyb2xlIjoiVVNFUiJ9.QEm7CXwf_0Fmm0HwdgRz9uVkUjx5FZH17A6J6rdfYTI"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "/api/user/": {
+    "get": {
+      "summary": "retourne la liste des utilisateurs.",
+      "tags": ["User"],
+      "responses": {
+        "200": {
+          "description": "utilisateurs enregistrer",
+          "schema": {
+            "type": "string",
+            "examples": {
+              "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJyb2xlIjoiVVNFUiJ9.QEm7CXwf_0Fmm0HwdgRz9uVkUjx5FZH17A6J6rdfYTI"
+            }
+          }
+        }
+      }
+    }
+  }
+}

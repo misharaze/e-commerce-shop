@@ -1,0 +1,64 @@
+.about_us {
+  background-image: url(../../../public//img//about/salad.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+}
+.about_us .first_null_section {
+  height: 200px;
+}
+.about_us .col-md-1 {
+  width: 3%;
+}
+.about_us .main_about {
+  background-image: url(../../../public/img/index/menu-bg.jpg);
+  height: 400px;
+  vertical-align: middle;
+}
+.about_us .main_about .imgLogo {
+  width: 60%;
+}
+.about_us .count_data {
+  height: 300px;
+}
+.about_us .count_data .col-md-3 {
+  padding: 0px 50px;
+}
+.about_us .info_data {
+  background-image: url(../../../public/img/index/menu-bg.jpg);
+  height: 400px;
+}
+.about_us .tools_data {
+  background-image: url(../../../public/img/index/menu-bg.jpg);
+  height: 500px;
+}
+.about_us .countNumber {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.about_us .countNumberA {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.about_us .icon_count {
+  color: white;
+  margin-bottom: 20px;
+}
+.about_us .text {
+  font-size: 12px;
+}
+.about_us .sass-icon {
+  color: rgb(221, 57, 57);
+}
+.about_us .git-icon {
+  color: rgb(0, 0, 0);
+}
+.about_us .boot-icon {
+  color: rgb(120, 57, 221);
+}
+.about_us .react-icon {
+  color: rgb(121, 199, 250);
+}/*# sourceMappingURL=AboutUs.css.map */

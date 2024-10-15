@@ -1,0 +1,40 @@
+.title {
+  margin-top: 50px;
+}
+
+.card_popular {
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+
+span {
+  color: black;
+}
+
+.title_arrow {
+  margin-top: -25px;
+}
+
+.sliderPopular {
+  font-family: "Montserrat", sans-serif;
+}
+
+.sliderPopular .swiper {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.sliderPopular .mySwiper {
+  max-height: 600px;
+}
+.sliderPopular .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.sliderPopular .card-img-top {
+  display: block;
+  max-width: 300px;
+  height: auto;
+}/*# sourceMappingURL=sliderPopular.css.map */

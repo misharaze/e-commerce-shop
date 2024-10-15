@@ -1,0 +1,9 @@
+.map_container {
+  font-family: "Montserrat", sans-serif;
+}
+.map_container .map {
+  border-radius: 30px;
+}
+.map_container .text_info {
+  text-align: center;
+}/*# sourceMappingURL=Location.css.map */

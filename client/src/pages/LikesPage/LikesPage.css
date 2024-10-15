@@ -1,0 +1,10 @@
+.container {
+  width: 80%;
+}
+.container .card {
+  margin: 15px;
+  padding: 20px 20px;
+}
+.container .btn-remove {
+  cursor: pointer;
+}/*# sourceMappingURL=LikesPage.css.map */

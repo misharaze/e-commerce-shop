@@ -1,0 +1,143 @@
+@import "../../index.scss";
+
+.profile {
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: -2px 1px 46px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -2px 1px 46px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -2px 1px 46px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 30px !important;
+
+  .relative{
+    position: relative;
+  }
+  .badge_isSocial{
+    position: absolute;
+    top: 0px;
+    right: 0;
+
+  }
+
+  .bg_badge{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+  }
+
+
+  .card_history {
+    padding: 0 !important;
+    box-shadow: none;
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    .card_body {
+      padding: 0 !important;
+      margin: 0 !important;
+      height: 70px;
+      box-shadow: none;
+    }
+
+    .card_title {
+      font-size: 16px;
+      box-shadow: none;
+      padding: 10px;
+    }
+  }
+
+  .mySwiperHistory {
+    height: 520px;
+  }
+
+  .card_img {
+    box-shadow: none;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: $red;
+}
+
+.profile-button {
+  background: $red;
+  box-shadow: none;
+  border: none;
+}
+
+.profile-button:hover {
+  background: $white_red;
+}
+
+.profile-button:focus {
+  background: $red;
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: $red;
+  box-shadow: none;
+}
+
+.back:hover {
+  color: $white_red;
+  cursor: pointer;
+}
+
+.labels {
+  font-size: 11px;
+}
+
+.add-experience:hover {
+  background: $white_red;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px $white_red;
+}
+
+.lastest_product {
+  .lastest_product_item {
+    border: 1px solid $red;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.test_avatar {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.avatar_profile{
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.change_photo_btn {
+  background: $red;
+  border: none;
+
+  &:hover {
+    background-color: $white_red;
+  }
+}
